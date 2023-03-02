@@ -1,0 +1,29 @@
+﻿<Window x:Class="SampleTask.CreateIShapeBeamView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleTask"
+        mc:Ignorable="d"
+        Title="CreateIShapeBeamView" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Height:" Width="70" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding Height, Mode=TwoWay}" Width="100" VerticalAlignment="Center" Margin="10 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Breadth:" Width="70" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding Breadth, Mode=TwoWay}" Width="100" VerticalAlignment="Center" Margin="10 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Thickness:" Width="70" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding Thickness, Mode=TwoWay}" Width="100" VerticalAlignment="Center" Margin="10 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="OK" Width="75" Command="{Binding OkCommand}" IsDefault="True" Margin="10 0 0 0"/>
+                <Button Content="Cancel" Width="75" Command="{Binding CancelCommand}" IsCancel="True" Margin="10 0 0 0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

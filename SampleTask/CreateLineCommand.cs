@@ -64,5 +64,10 @@ namespace SampleTask
 
             return Result.Success;
         }
+
+        internal object CreateProfile(double height, double breadth, double thickness)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
