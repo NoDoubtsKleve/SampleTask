@@ -72,5 +72,10 @@ namespace SampleTask
             
             return RhinoDoc.ActiveDoc.Objects.Find(id);
         }
+
+        internal static object Create(object profile, LineCurve lineCurve)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
