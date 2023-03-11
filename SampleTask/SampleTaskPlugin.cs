@@ -13,6 +13,7 @@ namespace SampleTask
     ///</summary>
     public class SampleTaskPlugin : Rhino.PlugIns.PlugIn
     {
+        
         public SampleTaskPlugin()
         {
             Instance = this;
